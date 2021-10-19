@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking this survey!</p>
+    <form id="survey-form">
+
+        <div class="form-control">
+            <label for="name" id="name-label">
+                    Name
+                </label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="email-label">
+                    Email
+                </label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="number-label">
+                    Age
+                </label>
+            <input type="number" id="number" min="10" max="99" placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+            <label for="dropdown" id="dropdown">
+                    <p>Who even are you?</p>
+                </label>
+            <select name="dropdown" id="dropdown">
+                    <option value="someone">Someone</option>
+                    <option value="noone">No one</option>
+                    <option value="idk">I don't even know, man</option>
+                    <option value="Batman">Batman</option>
+                </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                    Would you recommend this site to a friend?
+                </label>
+
+            <label for="recommed-1">
+                    <input type="radio"
+                           id="recommed-1"
+                           name="recommed">Sure</input>
+                </label>
+            <label for="recommed-2">
+                    <input type="radio"
+                           id="recommed-2"
+                           name="recommed">Meh</input>
+                </label>
+            <label for="recommed-3">
+                    <input type="radio"
+                           id="recommed-3"
+                           name="recommed">This is a website?</input>
+                </label>
+        </div>
+
+        <div class="form-control">
+            <label>Animals that you like:
+                    <small>(Check all that apply)</small>
+                </label>
+            <label for="inp-1">
+                    <input type="checkbox"
+                           name="inp">Cats</input></label>
+            <label for="inp-2">
+                    <input type="checkbox"
+                           name="inp">Dogs</input></label>
+            <label for="inp-3">
+                    <input type="checkbox"
+                           name="inp">Elephants</input></label>
+            <label for="inp-4">
+                    <input type="checkbox"
+                           name="inp">All of them!</input></label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                    Any comments or suggestions?
+                </label>
+            <textarea name="comment" id="comment" placeholder="Please enter comments here">
+                </textarea>
+        </div>
+
+        <button type="submit" value="submit" id="submit">
+                Submit Stuff
+            </button>
+    </form>
+</body>
+
+</html>
